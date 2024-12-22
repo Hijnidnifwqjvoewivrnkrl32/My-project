@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seankim43's Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-family: "Comic Sans MS", fantasy;
+      color: #4b9be1;
+    }
+    h2 {
+      font-family: Arial, Helvetica, cursive;
+      color: rgb(243, 103, 123);
+      margin-bottom: 10rem;
+    }
+    button {
+      font-family: monospace;
+      padding: 1rem;
+      font-size: 2rem;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+    .welcome {
+      background: blue;
+    }
+    .name {
+      background: orange;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seankim43's website</h1>
+  <h2>Click the buttons below</h2>
+  <button class="welcome" onclick="alert('Hello there')">Welcome</button>
+  <button
+    class="name"
+    onclick="handleNameClick()"
+  >
+    What's your name?
+  </button>
+  <script>
+    function handleNameClick() {
+      const name = prompt("What's your name?");
+      if (name) {
+        alert('Nice to meet you, ' + name + '!');
+      } else {
+        alert('Nice to meet you, stranger');
+      }
+    }
+  </script>
+</body>
+</html>
